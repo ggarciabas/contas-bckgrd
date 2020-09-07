@@ -4,8 +4,6 @@
 name: pylint
 
 on:
-  push:
-    branches: [ pylint ]
   pull_request:
     branches: [ master ]
 
