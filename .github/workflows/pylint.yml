@@ -9,6 +9,10 @@ on:
   pull_request:
     branches: [ master ]
 
+branding:
+  icon: 'award'  
+  color: 'green'
+
 jobs:
   build:
 
@@ -24,7 +28,3 @@ jobs:
       run: |
         pip install pylint
         pylint app/*.py -r y
-
-branding:
-  icon: 'award'  
-  color: 'green'
