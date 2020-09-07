@@ -23,5 +23,4 @@ jobs:
     - name: Pylint
       run: |
         pip install pylint
-        pylint app/*.py -r y > /tmp/pylint-report.txt
-        cat /tmp/pylint-report.txt
+        pylint app/*.py -r y
