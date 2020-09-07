@@ -9,10 +9,6 @@ on:
   pull_request:
     branches: [ master ]
 
-branding:
-  icon: 'award'  
-  color: 'green'
-
 jobs:
   build:
 
@@ -27,4 +23,5 @@ jobs:
     - name: Pylint
       run: |
         pip install pylint
-        pylint app/*.py -r y
+        pylint app/*.py -r y > /tmp/pylint-report.txt
+        if [ $(cat /tmp/pylint-report.txt 2> /dev/null | tail -n2 | awk '{print $7}' | cut -d"/" -f1) -leq 5 ]; set -e o pipefail;
