@@ -22,5 +22,5 @@ jobs:
         python-version: 3.8.5
     - name: Pylint
       run: |
-        pip install pylint
-        pylint app/*.py -r y
+        pip install pylint pylint-flask
+        pylint --load-plugins pylint_flask app/*.py -r y
