@@ -20,7 +20,10 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8.5
-    - name: Pylint
+    - name: Pylint Flask
       run: |
         pip install pylint pylint-flask flask
         pylint --load-plugins pylint_flask app/*.py -r y
+    - name: Pylint Test
+      run: |
+        pylint tests/*.py
