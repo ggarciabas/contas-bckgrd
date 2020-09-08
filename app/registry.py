@@ -1,4 +1,4 @@
-""" API para consulta de registros. """
+" API para consulta de registros. "
 from flask.views import MethodView
 import os
 from flask import request

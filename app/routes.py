@@ -1,4 +1,4 @@
-""" Arquivo de rotas. """
+" Arquivo de rotas. "
 
 def index():
     """
