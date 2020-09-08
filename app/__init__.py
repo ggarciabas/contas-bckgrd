@@ -1,6 +1,4 @@
-"""
-    Arquivo de inicialização para o módulo app.
-"""
+""" Arquivo de inicialização para o módulo app. """
 
 import app.app_flask as app_flask
 from app.registry import RegistryAPI
