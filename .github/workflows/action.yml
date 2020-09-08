@@ -5,7 +5,7 @@ name: action
 
 on:
   push:
-    branches: [ flask ]
+    branches: [ dev ]
   pull_request:
     branches: [ master ]
 
